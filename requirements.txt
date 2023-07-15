@@ -1,0 +1,6 @@
+# All the packages required for implementing the project
+numpy
+pandas
+seaborn
+-e .
+
