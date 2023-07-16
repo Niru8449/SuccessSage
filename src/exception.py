@@ -18,11 +18,10 @@ class customException(Exception) :
     def __str__(self) :
         return self.error_message
 
-# try...catch...CustomException....
 
-try : 
-    a = 1/0
+# try : 
+#     a = 1/0
 
-except Exception as e:
-    logging.info("DivideByZeroError")
-    raise(customException(e, sys))
+# except Exception as e:
+#     logging.info("DivideByZeroError")
+#     raise(customException(e, sys))
