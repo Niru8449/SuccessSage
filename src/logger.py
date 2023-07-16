@@ -9,6 +9,7 @@ logs_path = os.path.join(os.getcwd(),'logs', LOG_FILE)
 os.makedirs(logs_path,exist_ok=True)
 
 LOG_FILE_PATH = os.path.join(logs_path, LOG_FILE)
+# LOG_FILE_PATH = logs_path.... doesn't work....
 
 logging.basicConfig(
     filename=LOG_FILE_PATH,
@@ -16,3 +17,6 @@ logging.basicConfig(
     level=logging.INFO,
 
 )
+
+if __name__=="__main__" :
+    logging.info("Logging has started")
